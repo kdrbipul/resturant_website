@@ -9,12 +9,12 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-            <Container maxWidth='lg'>
+            <Container >
                 <FlexBox justifyContent='space-between' sx={{padding:'1rem 0'}}>
                     <NavLink to='/'><img src={logo} alt="logo" style={{width:'100px'}} /></NavLink>
                     <Stack direction='row' spacing={4} sx={{alignItems:'center'}}>
                         <IconButton><ShoppingCartOutlinedIcon /></IconButton>
-                        <Button>Sign In</Button>
+                        <Button variant='text'>Sign In</Button>
                         <Button>Sign Up</Button>
                     </Stack>
                 </FlexBox>
